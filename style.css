@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #EAEFEF;
+}
+body{
+    background-color: #333446;
+}
+.heading{
+    background-color: #7F8CAA;
+    height: 4rem;
+    font-size: 3vw;
+    line-height: 4rem;
+    text-align: center;
+}
+.choice1{
+    height: auto;
+    width: ;
+}

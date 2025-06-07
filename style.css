@@ -48,7 +48,7 @@ img{
 
 .scoreboard{
     display: flex;
-    margin-top: 8rem;
+    margin-top: 6rem;
     gap: 5rem;
     text-align: center;
 }
@@ -63,7 +63,7 @@ img{
 }
 
 #resultxt{
-    font-size: xx-large;
+    font-size: 3vw;
     margin-top: 4rem;
     background-color: rgb(227, 161, 37);
     padding: 1rem;

@@ -3,9 +3,12 @@
     padding: 0px;
     font-family: 'Times New Roman', Times, serif;
     color: #EAEFEF;
+    justify-content: center;
+    text-align: center;
 }
 body{
     background-color: #333446;
+    
 }
 .heading{
     background-color: #7F8CAA;
@@ -14,7 +17,81 @@ body{
     line-height: 4rem;
     text-align: center;
 }
-.choice1{
-    height: auto;
-    width: ;
+.userChoices{
+    display: flex;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.choice1, .choice2, .choice3{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    align-self: center;
+    background-color: black;
+}
+
+img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    align-self: center;
+    border: 0.3rem solid black;
+}
+
+.scoreboard{
+    display: flex;
+    margin-top: 8rem;
+    gap: 5rem;
+    text-align: center;
+}
+
+#userScore, #compScore{
+    font-size: x-large;
+    color: orange;
+}
+
+.userScores, .compScores{
+    font-size: larger;
+}
+
+.result{
+    margin-top: 4rem;
+    font-size: xx-large;
+    background-color: rgb(227, 161, 37);
+    padding: 1rem;
+    display: inline-flex;
+    border-radius: 20%;
+}
+
+.selectedChoice{
+    justify-content: center;
+    background-color: #B8CFCE;
+    width: 400px;
+    height: 320px;
+    display: flex;
+    border-radius: 8%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: larger;
+    display: none;
+}
+
+#selectedResult{
+    margin-top: 0;
+    display: flex;
+}
+
+#userSelected, #compSelected{
+    margin-top: 10px;
+}
+
+.userSelected, .compSelected{
+    color: #333446;
 }

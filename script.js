@@ -28,6 +28,7 @@ let results = (userSelected) => {
     let compSelected = compChoice();
     if(userSelected === compSelected){
         resultxt.innerText = "It's a TIE!! Try Again...";
+        resultxt.setAttribute('style', 'background-color: rgb(227, 161, 37);');
     }
     else{
         if(userSelected === "paper" && compSelected === "rock"){
@@ -54,13 +55,14 @@ let compChoice = () =>{
 
 let win = () => {
     resultxt.innerText = "Hurray!! You won.";
+    resultxt.setAttribute('style', 'background-color: green;');
     userScore++;
     userScores.innerText = userScore;
 };
 
 let loss = () => {
     resultxt.innerText = "Sorry!! Try Again.";
-    
+    resultxt.setAttribute('style', 'background-color: red;');
     compScore++;
     compScores.innerText = compScore;
 };

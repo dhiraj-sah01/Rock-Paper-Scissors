@@ -60,13 +60,10 @@ img{
     font-size: larger;
 }
 
-
-
 #resultxt{
     font-size: xx-large;
-    background-color: rgb(227, 161, 37);
     margin-top: 4rem;
-    /* background-color: rgb(227, 161, 37); */
+    background-color: rgb(227, 161, 37);
     padding: 1rem;
     display: inline-flex;
     border-radius: 20%;

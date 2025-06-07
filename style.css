@@ -28,7 +28,12 @@ body{
     height: 170px;
     border-radius: 50%;
     align-self: center;
-    background-color: black;
+}
+
+.choice1:hover, .choice2:hover, .choice3:hover{
+    img{
+        border: 0.3rem solid black;
+    }
 }
 
 img{
@@ -36,7 +41,7 @@ img{
     height: 170px;
     border-radius: 50%;
     align-self: center;
-    border: 0.3rem solid black;
+    /* border: 0.3rem solid black; */
 }
 
 .scoreboard{
@@ -55,10 +60,13 @@ img{
     font-size: larger;
 }
 
-.result{
-    margin-top: 4rem;
+
+
+#resultxt{
     font-size: xx-large;
     background-color: rgb(227, 161, 37);
+    margin-top: 4rem;
+    /* background-color: rgb(227, 161, 37); */
     padding: 1rem;
     display: inline-flex;
     border-radius: 20%;
@@ -94,4 +102,12 @@ img{
 
 .userSelected, .compSelected{
     color: #333446;
+}
+
+.selResult1{
+    margin-top: 4rem;
+    background-color: rgb(227, 161, 37);
+    padding: 1rem;
+    display: inline-flex;
+    border-radius: 20%;
 }

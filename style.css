@@ -34,6 +34,8 @@ body{
 .choice1:hover, .choice2:hover, .choice3:hover{
     img{
         border: 0.3rem solid black;
+        opacity: 40%;
+        cursor: pointer;
     }
 }
 
@@ -73,10 +75,10 @@ img{
 .selectedChoice{
     justify-content: center;
     background-color: #B8CFCE;
-    width: 400px;
-    height: 320px;
-    top: 10rem;
-    left: 25rem;
+    width: 30vw;
+    height: 50vh;
+    top: 25vh;
+    left: 35vw;
     display: flex;
     border-radius: 8%;
     flex-wrap: wrap;

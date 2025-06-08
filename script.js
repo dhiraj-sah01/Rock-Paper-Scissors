@@ -58,9 +58,7 @@ let results = (userSelected) => {
 let compChoice = () =>{
     let index = 0;
     index = Math.floor(Math.random() *3);
-    console.log(index)
     let option = ["rock", "paper", "scissors"];
-    console.log(option[index]);
     let compSelect = option[index];
     comp = compSelect;
     return compSelect;
@@ -72,7 +70,6 @@ let win = () => {
     userScore++;
     userScores.innerText = userScore;
     selChoice(resultxt.innerText, "green");
-    // restart();
 };
 
 let loss = () => {
@@ -81,7 +78,6 @@ let loss = () => {
     compScore++;
     compScores.innerText = compScore;
     selChoice(resultxt.innerText, "red");
-    // restart();
 };
 
 let selChoice = (text, color) => {
@@ -92,12 +88,11 @@ let selChoice = (text, color) => {
     selectedResult.setAttribute('style', `background-color: ${color};`);
     selectedUserChoice.src = "images/" + user + ".png";
     selectedCompChoice.src = "images/" + comp + ".png";
-    setTimeout(restart, 900);
+    setTimeout(restart, 1000);
 };
 
 let restart = () => {
     selectedChoice.setAttribute('style', 'display: none;');
     heading.setAttribute('style', 'opacity: 100%; pointer-events: all;');
     main.setAttribute('style', 'opacity: 100%; pointer-events: all;');
-
 };

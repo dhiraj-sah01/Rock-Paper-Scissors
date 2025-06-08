@@ -8,7 +8,6 @@
 }
 body{
     background-color: #333446;
-    
 }
 .heading{
     background-color: #7F8CAA;
@@ -76,37 +75,37 @@ img{
     background-color: #B8CFCE;
     width: 400px;
     height: 320px;
+    top: 10rem;
+    left: 25rem;
     display: flex;
     border-radius: 8%;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 1rem;
-    position: relative;
+    position: absolute;
     z-index: 5;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    font-size: larger;
     display: none;
 }
 
-#selectedResult{
-    margin-top: 0;
-    display: flex;
-}
 
 #userSelected, #compSelected{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .userSelected, .compSelected{
     color: #333446;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    align-self: center;
+    
 }
 
-.selResult1{
-    margin-top: 4rem;
+
+#selectedResult{
     background-color: rgb(227, 161, 37);
     padding: 1rem;
-    display: inline-flex;
+    display: flex;
     border-radius: 20%;
 }
+

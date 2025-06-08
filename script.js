@@ -5,22 +5,34 @@ let resultxt = document.querySelector("#resultxt");
 let userScores = document.querySelector("#userScore");
 let compScores = document.querySelector("#compScore");
 let resultdiv = document.querySelector(".result");
+let selectedChoice = document.querySelector(".selectedChoice");
+let selectedResult = document.querySelector("#selectedResult");
+let selectedUserChoice = document.querySelector("#userSelected");
+let selectedCompChoice = document.querySelector("#compSelected");
+let heading = document.querySelector(".heading");
+let main = document.querySelector(".main");
+
 
 let userScore = 0;
 let compScore = 0;
+let user = "";
+let comp = "";
 
 choice1.addEventListener("click",()=>{
     let userSelected = "rock";
+    user = "rock";
     results(userSelected);
 });
 
 choice2.addEventListener("click",()=>{
     let userSelected = "paper";
+    user = "paper";
     results(userSelected);
 });
 
 choice3.addEventListener("click",()=>{
     let userSelected = "scissors";
+    user = "scissors";
     results(userSelected);
 });
 
@@ -50,6 +62,7 @@ let compChoice = () =>{
     let option = ["rock", "paper", "scissors"];
     console.log(option[index]);
     let compSelect = option[index];
+    comp = compSelect;
     return compSelect;
 };
 
@@ -58,6 +71,8 @@ let win = () => {
     resultxt.setAttribute('style', 'background-color: green;');
     userScore++;
     userScores.innerText = userScore;
+    selChoice(resultxt.innerText, "green");
+    // restart();
 };
 
 let loss = () => {
@@ -65,5 +80,24 @@ let loss = () => {
     resultxt.setAttribute('style', 'background-color: red;');
     compScore++;
     compScores.innerText = compScore;
+    selChoice(resultxt.innerText, "red");
+    // restart();
 };
 
+let selChoice = (text, color) => {
+    selectedChoice.setAttribute('style', 'display: flex;');
+    heading.setAttribute('style', 'opacity: 10%; pointer-events: none;');
+    main.setAttribute('style', 'opacity: 10%; pointer-events: none;');
+    selectedResult.innerText = text;
+    selectedResult.setAttribute('style', `background-color: ${color};`);
+    selectedUserChoice.src = "images/" + user + ".png";
+    selectedCompChoice.src = "images/" + comp + ".png";
+    setTimeout(restart, 900);
+};
+
+let restart = () => {
+    selectedChoice.setAttribute('style', 'display: none;');
+    heading.setAttribute('style', 'opacity: 100%; pointer-events: all;');
+    main.setAttribute('style', 'opacity: 100%; pointer-events: all;');
+
+};
